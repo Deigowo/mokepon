@@ -81,7 +81,7 @@ app.post("/mokepon/:jugadorId/posicion", (req, res) => {
     })
 })
 
-app.post('http://localhost:8080/mokepon/:jugadorId/ataques', (req, res) => {
+app.post('/mokepon/:jugadorId/ataques', (req, res) => {
     const jugadorId = req.params.jugadorId || ""
     const ataques = req.body.ataques || ""
     
@@ -94,12 +94,17 @@ app.post('http://localhost:8080/mokepon/:jugadorId/ataques', (req, res) => {
     res.end()
 })
 
-app.get('http://localhost:8080/mokepon/:jugadorId/ataques', (req, res) => {
-    const jugadorId = req.params.jugadorId || ""
-    const jugador = jugadores.find((jugador) => jugador.id === jugadorId)
-    res.send({
-        jugador: jugador.ataques || []
-    })
+app.get("/mokepon/:jugadorId/ataques", (req, res) => {
+  const jugadorId = req.params.jugadorId || ""
+  const jugador = jugadores.find((jugador) => jugador.id === jugadorId)
+  res.send({
+    ataques: jugador.ataques || []
+  })
+})
+
+app.listen(8080, () => {
+  console.log(`Ya está el server bruh`)
+})
 })
 
 app.listen(8080, () => {
