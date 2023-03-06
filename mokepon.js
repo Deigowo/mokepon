@@ -44,9 +44,6 @@
                 {nombre: 'tierra', id: 'boton-tierra'},
                 {nombre: 'agua', id: 'boton-agua'},
             ]
-            
-            
-            
             let mokepones = []
             let ataqueJugador = []
             let ataqueEnemigo = []
@@ -124,30 +121,11 @@
             let Capipepo = new Mokepon('Capipepo', 'images/capipepo.png', 5, 'images/capipepo_(icon).png')
             let Ratigueya = new Mokepon('Ratigueya', 'images/ratigueya.png', 5, 'images/ratigueya_(icon).png')
             
-            //let HipodogeEnemigo = new Mokepon('Hipodoge', 'images/hipodoge.png', 5, 'images/hipodoge_(icon).png')
-            //let CapipepoEnemigo = new Mokepon('Capipepo', 'images/capipepo.png', 5, 'images/capipepo_(icon).png')
-            //let RatigueyaEnemigo = new Mokepon('Ratigueya', 'images/ratigueya.png', 5, 'images/ratigueya_(icon).png')
-            
             Hipodoge.ataques.push(...HIPODOGE_ATAQUES)
-                //{nombre: 'agua', id: 'boton-agua'},
-                //{nombre: 'agua', id: 'boton-agua'},
-                //{nombre: 'agua', id: 'boton-agua'},
-                //{nombre: 'tierra', id: 'boton-tierra'},
-                //{nombre: 'fuego', id: 'boton-fuego'},
             
             Capipepo.ataques.push(...CAPIPEPO_ATAQUES)
-                //{nombre: 'tierra', id: 'boton-tierra'},
-                //{nombre: 'tierra', id: 'boton-tierra'},
-                //{nombre: 'tierra', id: 'boton-tierra'},
-                //{nombre: 'agua', id: 'boton-agua'},
-                //{nombre: 'fuego', id: 'boton-fuego'},
             
             Ratigueya.ataques.push(...RATIGUEYA_ATAQUES)
-                //{nombre: 'fuego', id: 'boton-fuego'},
-                //{nombre: 'fuego', id: 'boton-fuego'},
-                //{nombre: 'fuego', id: 'boton-fuego'},
-                //{nombre: 'tierra', id: 'boton-tierra'},
-                //{nombre: 'agua', id: 'boton-agua'},
             
             mokepones.push(Hipodoge, Capipepo, Ratigueya)
             
@@ -417,9 +395,6 @@
                 sectionMensajes.innerHTML = resultado
                 nuevoAtaqueJugador.innerHTML = indexAtaqueJugador
                 nuevoAtaqueEnemigo.innerHTML = indexAtaqueEnemigo
-                
-                //let parrafo = document.createElement('p')
-                //parrafo.innerHTML = 'Tu mascota atacó con ' + ataqueJugador + ', las mascota del enemigo atacó con ' + ataqueEnemigo + '- ' + resultado
                 
                 ataquesDelJugador.appendChild(nuevoAtaqueJugador)
                 ataquesDelEnemigo.appendChild(nuevoAtaqueEnemigo)
